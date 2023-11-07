@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Translate API, google.com-->
     <style>
-    .parent{
-        position: relative;
-        top: 0;
-        left: 0;
+
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px; 
+        margin-right: 10px;
     }
-    .image1{
-        border: 1px solid #FFCE81;
-        position: absolute;
-        top:0;
-        left:30;
+    .bilde{
+        max-width: 200px;
     }
-    .image2{
-        border: 1px solid #FFCE81;
-        position: absolute;
-        top: 150px;
-        left:0px;
-    }
-    .image3{
-        border: 1px solid #FFCE81;
-        position: relative;
-        top: 180px;
-        left:0px;
-    }
+
+
     </style>
 </head>
 
 
 <body>
     <header>
+        
     </header>
+    <div id="google_translate"></div>
+    <button id="translateButton">Oversett</button>
 
-    <h3>Activities</h3>
+    <h3>Aktiviteter</h3>
 
     <div class="center-box">
     <p>I Trondheim er det massevis av aktiviteter for studenter, både aktiviteter de kan gjøre selv eller organiserte
@@ -46,7 +42,7 @@
 
     <div class="omoss">
         <h4>NTNUI</h4>
-        <div class="item left">    
+        <div class="item right">    
             <img src="img/NTNUI.jpg" alt="" class="bilde">
             <div class ="gulboks">
             <p>NTNUI er Norges største idrettsforening, av og for studenter ved NTNU. 
@@ -64,12 +60,13 @@
             </div>
         </div>
         <h4>Turmuligheter</h4>
-        <div class="item right">
-            <div class="parent">
-                <img class="image1" src="img/Viktoria.PNG" alt="" ><br>
-                <img class="image2" src="img/Tone.PNG" alt="" ><br>
-                <img class="image3" src="img/Hanna.PNG" alt="" >
+        <div class="item left">
+            <div class="image-container">
+                <img src="img/Estenstadhytta.jpg" alt="Image 1" class="bilde">
+                <img src="img/bymarka.jpg" alt="Image 2" class="bilde">
+                <img src="img/Grønlia.jpg" alt="Image 3" class="bilde">
             </div>
+
             <div class ="gulboks">
             <p> I Trondheimsområdet er det mange områder med gode turmuligheter. Både om du vil gå turer til fots eller på ski på vinterhalvåret.</p>
             <h5>Skiturer</h5>
@@ -99,8 +96,8 @@
             </div>
         </div>
         <h4>SiT Trening</h4>
-        <div class="item left">
-            <img src="img/Hallvard.PNG" alt="" class="bilde">
+        <div class="item right">
+            <img src="img/SIT.png" alt="" class="bilde">
             <div class ="gulboks">
             <p>Ønsker du heller å trene på egenhånd på treningssenter eller delta på gruppetimer? Da kan du sjekke ut SiT trening.
                 De har det beste treningstilbudet for studenter i Trondheim. Hos Sit får du tilgang til fem ulike treningssentre med moderne utstyr, lange åpningstider og varierte gruppetimer nær de største campusene, til en rimelig penge. <br>
@@ -111,7 +108,7 @@
     </div>
 
 
-
+    <script src="javascript/script.js"></script>
     <footer>
 
     </footer>
