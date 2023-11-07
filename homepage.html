@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
+    <div id="google_translate"></div>
+    <button id="translateButton">Oversett</button>
+
     <div class="homepage">
         <div class="center-box-homepage" >
             <p style="font-size: 30px;">Åja, du skal studere i Trondheim?</p>
@@ -12,48 +16,48 @@
         <div class="homepage-innhold">
             <!--Slideshow-->
             <div class="slides-homepage">
-                <div class="mySlides fade">
-                    <div class="numbertext"> 1 / 4</div>
-                    <img src="img/ntnu-hovedbygget.jpeg" style="width:100%">
-                    <div class="text">NTNU hovedbygget</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"> 2 / 4</div>
-                    <img src="img/trondheim.png" style="width:100%">
-                    <div class="text">Trondheim</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"> 3 / 4</div>
-                    <img src="img/samfundet.png" style="width:100%">
-                    <div class="text">Studentersamfundet</div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext"> 4 / 4</div>
-                    <img src="img/Nidarosdommen.png" style="width:100%">
-                    <div class="text">Nidarosdomen</div>
-                </div>
-                
-                <!--Previous and next buttons-->
+                <!--Previous button-->
                 <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                <a class="next" onclick="plusSlides(1)">&#10095</a>
-            
-                <div style="text-align: center;">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+                
+                <div class="sl">
+                    <div class="mySlides fade">
+                        <img src="img/ntnu-hovedbygget.jpeg" style="width:35vw; height: 25vw">
+                        <!--<div class="text">NTNU hovedbygget</div>!-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/trondheim.png" style="width:35vw; height: 25vw">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/samfundet.png" style="width:35vw; height: 25vw">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="img/Nidarosdommen.png" style="width:35vw; height: 25vw">
+                    </div>
+
+                    <!--Dots used to change which image is currently shown-->
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
                 </div>
+                
+
+                <!--Next button-->
+                <a class="next" onclick="plusSlides(1)">&#10095</a>    
+
             </div>
+
             <!--Text next to slideshow-->
-            
-            <div class="tekst-homepage">
+            <div class="text-homepage">
                 <p>Velkommen til Trondheim! <br> <br> 
                 Her kan du finne informasjonom studentlivet i Trondheim! Dette er en by med mange gamle tradisjoner og gøye aktiviteter man kan bli med på.</p>
             </div>
-            
+    
         </div>
     </div>
     <script src="javascript/script.js"></script>

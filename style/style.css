@@ -63,14 +63,15 @@ h3 {
     
 }
 
+/*Container for the whole homepage*/
 .homepage {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
-
 }
 
+/*Container for main text/heading of the page*/
 .center-box-homepage {
     text-align: center; 
     background-color: #FFCE81; 
@@ -79,6 +80,7 @@ h3 {
     margin: 0 auto; 
     width: 80%;
 }
+/*Container for all the rest of the content on the page*/
 .homepage-innhold{
     display: flex;
     flex-direction: row;
@@ -87,52 +89,37 @@ h3 {
     width: 80%;
     
 }
+/*Container for the slideshow as a whole*/
 .slides-homepage{
-    max-width: auto;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
     border: solid #FFCE81;
     border-width: thick;
     background-color: #FFCE81;
-    text-align: center;
-    height: auto;
-    align-self: stretch;
-
-    
+    padding-top: 1.5%;
 }
+/*Container for the slides*/
 .mySlides {
     display: none;
 }
+/*container for the next and previous arrows*/
 .prev, .next {
     cursor: pointer;
-    top: 50%;
-    width: auto;
-    margin-top: -20%;
-    margin-left: -50%;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    
 }
-.next{
-    right: 51%;
-    border-radius: 3px 0 0 3px;
-}
+/*backroundcolor changes when you hover over the arrow*/
 .prev:hover, .next:hover {
     background-color: #BCD3BF;
 }
 
-.numbertext {
-    display:none;
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    top: 0;
-
-}
-
+/*Container for the dots at the bottom of the image one can shift images with*/
 .dot{
     cursor: pointer;
     height: 10px;
@@ -148,8 +135,14 @@ h3 {
     background-color: #FFF6E9;
 }
 
+/*Container to ensure dots is under picture*/
+.sl{
+    display:flex;
+    flex-direction: column;
+}
 
-.tekst-homepage {
+/*Container for the text next to the slideshow*/
+.text-homepage {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -1,9 +1,14 @@
 
-type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  
+function googleTranslate() {
+  new google.translate.TranslateElement({pageLanguage: 'no', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate');
 }
 
+document.getElementById('translateButton').addEventListener('click', function() {
+  googleTranslate();
+});
+
+/* https://www.w3schools.com/howto/howto_google_translate.asp */
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -33,4 +38,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+//Help making the slideshow from: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
