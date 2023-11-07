@@ -23,4 +23,4 @@ form.addEventListener('submit', function (event) {
 
     // This is just a basic example to get you started with form validation.
     alert('Form submitted successfully!');
-});
+}); 
