@@ -4,6 +4,7 @@
 }
 
 body {
+    margin-top: 200px; /*La til for at alt skal komme under headeren*/
     background-color: #BCD3BF 
 }
 

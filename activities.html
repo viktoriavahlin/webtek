@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dropdown.css">
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!--Translate API, google.com-->
     <style>
-
+    .body {
+        width: 100%;
+    }
 
     .image-container {
         flex: 1;
@@ -18,18 +21,35 @@
     .bilde{
         max-width: 200px;
     }
+    .gulboks {
+    flex: 1;
+    border: 2px solid #FFCE81;
+    padding: 30px;
+    max-width: 400px; 
+    background-color: #FFCE81;
+    color: black;
+    }
 
-
+    .item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        /*margin: 20px 0;*/
+        justify-content: center;
+    }
     </style>
 </head>
 
 
 <body>
     <header>
-        
     </header>
-    <div id="google_translate"></div>
-    <button id="translateButton">Oversett</button>
+
+
+    <div id="google_translate">
+    <button id="translateButton">Oversett</button>  
+    </div>
+
 
     <h3>Aktiviteter</h3>
 
@@ -38,10 +58,11 @@
         aktiviteter som sport. På denne siden kan du lese om noen av aktivitetstilbudene Trondheim har å by på. 
     </p>
     </div>
+    
 
-
+    <a id="NTNUI">
     <div class="omoss">
-        <h4>NTNUI</h4>
+        <h3>NTNUI</h3>
         <div class="item right">    
             <img src="img/NTNUI.jpg" alt="" class="bilde">
             <div class ="gulboks">
@@ -59,12 +80,14 @@
                 <p>Sjekk ut NTNUI.no for mer informasjon!</p>
             </div>
         </div>
-        <h4>Turmuligheter</h4>
+        </a>
+        <a id="Tur">
+        <h3>Turmuligheter</h3>
         <div class="item left">
             <div class="image-container">
-                <img src="img/Estenstadhytta.jpg" alt="Image 1" class="bilde">
-                <img src="img/bymarka.jpg" alt="Image 2" class="bilde">
-                <img src="img/Grønlia.jpg" alt="Image 3" class="bilde">
+                <img src="img/Estenstadhytta.jpg" alt="Image 1" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
+                <img src="img/bymarka.jpg" alt="Image 2" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
+                <img src="img/Grønlia.jpg" alt="Image 3" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
             </div>
 
             <div class ="gulboks">
@@ -95,22 +118,27 @@
                 Lørdag - Søndag: 10-16</p>
             </div>
         </div>
-        <h4>SiT Trening</h4>
+        </a>
+        <a id="Sit">
+        <h3>Sit Trening</h3>
         <div class="item right">
             <img src="img/SIT.png" alt="" class="bilde">
             <div class ="gulboks">
-            <p>Ønsker du heller å trene på egenhånd på treningssenter eller delta på gruppetimer? Da kan du sjekke ut SiT trening.
+            <p>Ønsker du heller å trene på egenhånd på treningssenter eller delta på gruppetimer? Da kan du sjekke ut Sit trening.
                 De har det beste treningstilbudet for studenter i Trondheim. Hos Sit får du tilgang til fem ulike treningssentre med moderne utstyr, lange åpningstider og varierte gruppetimer nær de største campusene, til en rimelig penge. <br>
                 For mer info, sjekk ut:<br>
                 https://www.sit.no/trening </p>
             </div>
         </div>
+        </a>
     </div>
 
 
     <script src="javascript/script.js"></script>
-    <footer>
+    <script src="javascript/dropdown.js"></script>
 
+    <footer>
+        <script src="javascript/dropdown.js"></script>
     </footer>
 </body>
 
