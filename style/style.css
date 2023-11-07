@@ -59,14 +59,39 @@ h3 {
     margin: 0 auto; 
 }
 
-.header_footer {
+
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: auto;
+    margin: 0px auto;
     align-items: center;
-    background-color: #FFCE81;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
     padding: 10px;
+    box-sizing: border-box;
+    background-color: #FFCE81;
     border: 2px solid #FFCE81;
-    max-width: 400px; 
-    margin: 0 auto; 
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #FFCE81;
+    border: 2px solid #FFCE81;
 }
