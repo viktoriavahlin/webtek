@@ -1,10 +1,13 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
+    box-sizing:border-box
 }
 
 body {
-    background-color: #BCD3BF 
+    background-color: #BCD3BF;
+    width: 100%; 
+    
 }
 
 .omoss {
@@ -57,5 +60,107 @@ h3 {
     border: 2px solid #FFCE81;
     max-width: 400px; 
     margin: 0 auto; 
+    
 }
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.center-box-homepage {
+    text-align: center; 
+    background-color: #FFCE81; 
+    padding: 10px;
+    border: 2px solid #FFCE81;
+    margin: 0 auto; 
+    width: 80%;
+}
+.homepage-innhold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 80%;
+    
+}
+.slides-homepage{
+    max-width: auto;
+    width: 50%;
+    border: solid #FFCE81;
+    border-width: thick;
+    background-color: #FFCE81;
+    text-align: center;
+    height: auto;
+    align-self: stretch;
+
+    
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -20%;
+    margin-left: -50%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+.next{
+    right: 51%;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: #BCD3BF;
+}
+
+.numbertext {
+    display:none;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+
+}
+
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #BCD3BF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #FFF6E9;
+}
+
+
+.tekst-homepage {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: #FFCE81;
+    text-align: center;
+    align-self: stretch; 
+    border: solid #FFCE81;
+    border-width: thick;
+}
+
+
+
 
