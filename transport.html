@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>Transport og geografi</title>
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="style/dropdown.css">
     <style>
         h1 {
            text-align: center;
            font-size: 25px;
+        }
+
+        #kart2 {
+            position: relative;
+            top: 1cm;
+            left: calc(50vw - 195px);
+            text-align: center;
         }
     </style>
 </head>
@@ -18,6 +25,10 @@
     <header>
 
     </header>
+    
+    <div id="google_translate">
+    <button id="translateButton">Oversett</button>  
+    </div>
 
     <h1>Transport og geografi</h1>
     <div class="center-box">
@@ -39,8 +50,8 @@
     <br>
 
     <div class="center-box">
+    
     <h2>Kartet kort forklart</h2>
-
     <h3>Buss:</h3>
     <p>
         I hverdagen som student i Trondheim kan det for noen være lurt å skaffe seg et busskort fra AtB. 
@@ -74,9 +85,14 @@
     
     <br>
 
-    <p> <img src="img/KartMarkert.png" alt="KartMarkert" width="390px"> </p>
+    <!-- <p> <img src="img/KartMarkert.png" alt="KartMarkert" width="390px"> </p> -->
     </div> 
+    <img src="img/KartMarkert.png" alt="KartMarkert" width="390px" id="kart2">
 
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/dropdown.js"></script>
+    
     <footer><p>Footer content is here</p></footer>
 </body>
 </html>
