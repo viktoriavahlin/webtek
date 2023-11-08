@@ -46,6 +46,8 @@ header.innerHTML = `
 <div class="logo">
     <img src="img/Logo.png" alt="Logo inkluderingsbanden" style="width: 250px">
 </div>
+<div class="flexcontainer" id="greenbox">
+</div>
 
 `;
 
