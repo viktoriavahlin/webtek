@@ -141,7 +141,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
     align-items: center;
@@ -151,7 +151,7 @@ h4 {
     z-index: 9999;
     padding: 10px;
     box-sizing: border-box;
-    background-color: BCD3BF;
+    background-color: #BCD3BF;
     
 }
 
@@ -159,7 +159,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
     position: fixed;
