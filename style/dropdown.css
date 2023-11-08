@@ -15,23 +15,6 @@
  }
  
 
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: auto;
-    margin: 0px auto;
-    align-items: center;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #BCD3BF;
-    
-}
 
 .header {
     /*display: flex;*/
