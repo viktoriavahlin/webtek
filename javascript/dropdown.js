@@ -52,14 +52,35 @@ header.innerHTML = `
 `;
 
 
-
-
-
-const footer = document.querySelector('footer');
-footer.innerHTML = `
-<div class="footer">
-    <p>Inkluderingsbanden</p>
-</div>
-`;
 const headerOffset = header.offsetTop; 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+footer.innerHTML = `
+  <div class="footer">
+    <div class="item-left">
+        <h3>Inkluderingsbanden<h3>
+        <p>
+        Tlf +47 047 05 704<br>
+        mail: inkluderingsbanden@gmail.com<br>
+        Høgskoleringen 58, 7034 Trondheim<br>
+        </p>
+        </div>
+    
+        <p>
+        <a href="contact.html">Kontakt oss</a> <br><br>
+        <a href="aboutus.html">Om oss</a>
+        </p>
+
+        
+  </div>
+  
+  
+`;
+
 const footerOffset = footer.offsetTop;
+  });
+
+
+
+
