@@ -6,48 +6,49 @@ header.innerHTML = `
 <div class="header">
 <nav id=navbar>
     <ul>
-    <li><a href="#">Aktiviteter</a>
+    <li><a href="activities.html">Aktiviteter</a>
         <ul>
-            <li><a href="#">NTNUI</a></li>
-            <li><a href="#">Turmuligheter</a></li>
-            <li><a href="#">Sit Trening</a></li>
+            <li><a href="activities.html#NTNUI">NTNUI</a></li>
+            <li><a href="activities.html#Tur">Turmuligheter</a></li>
+            <li><a href="activities.html#Sit">Sit Trening</a></li>
         </ul>
     </li>
-    <li><a href="#">Geografi</a>
+    <li><a href="transport.html">Geografi</a>
         <ul>
-        <li><a href="#">Kart</a></li>  
-        <li><a href="#">Transport</a></li>
+        <li><a href="transport.html#buss">Kart</a></li>  
+        <li><a href="transport.html#KartTrondheim">Transport</a></li>
         </ul>
     </li>
     <li>          </li>
     <li>          </li>
     <li>          </li>
     <li>          </li>
-    <li>          </li>
-    <li>          </li>
-    <li>          </li>
-    <li><a href="#">Tradisjoner</a>
+    <li><a href="traditions.html">Tradisjoner</a>
         <ul>
-            <li><a href="#">Studentviser</a></li>
-            <li><a href="#">Hva er dette?</a></li>
-            <li><a href="#">Hva betyr det?</a></li>
-            <li><a href="#">Fadderuka</a></li>
-            <li><a href="#">Utesteder</a></li>
+            <li><a href="traditions.html#Studentviser">Studentviser</a></li>
+            <li><a href="traditions.html#Hvaer">Hva er dette?</a></li>
+            <li><a href="traditions.html#Hvabetyr">Hva betyr det?</a></li>
+            <li><a href="traditions.html#Fadderuka">Fadderuka</a></li>
+            <li><a href="traditions.html#Utesteder">Utesteder</a></li>
         </ul>
         </li> 
-    <li><a href="#">Frivillige verv</a>
+    <li><a href="volunteerwork.html">Frivillige verv</a>
         <ul>
-        <li><a href="#">Linjeforeninger</a></li>
-        <li><a href="#">Uka</a></li>
-        <li><a href="#">Samfundet</a></li>
-        <li><a href="#">Faglige verv</a></li>
+        <li><a href="volunteerwork.html#linje">Linjeforeninger</a></li>
+        <li><a href="volunteerwork.html#uka">Uka</a></li>
+        <li><a href="volunteerwork.html#samf">Samfundet</a></li>
+        <li><a href="volunteerwork.html#faglig">Faglige verv</a></li>
         </ul>
     </li>
     </ul>
 </nav>
 </div>
+<a href="homepage.html">
 <div class="logo">
     <img src="img/Logo.png" alt="Logo inkluderingsbanden" style="width: 250px">
+</div>
+</a>
+<div class="flexcontainer" id="greenbox">
 </div>
 
 `;

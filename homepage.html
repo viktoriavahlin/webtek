@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/dropdown.css">
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <title>Homepage</title>
 </head>
 <body>
-    <div id="google_translate"></div>
-    <button id="translateButton">Oversett</button>
+    <div id="google_translate">
+    <button id="translateButton">Oversett</button></div>
     
     <header>
     </header>
@@ -22,24 +23,24 @@
             <!--Slideshow-->
             <div class="slides-homepage">
                 <!--Previous button-->
-                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 
                 <div class="sl">
                     <div class="mySlides fade">
-                        <img src="img/ntnu-hovedbygget.jpeg" style="width:35vw; height: 25vw">
+                        <img src="img/ntnu-hovedbygget.jpeg" alt="Hovedbygget" style="width:35vw; height: 25vw">
                         <!--<div class="text">NTNU hovedbygget</div>!-->
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="img/trondheim.png" style="width:35vw; height: 25vw">
+                        <img src="img/trondheim.png" alt="Trondheim" style="width:35vw; height: 25vw">
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="img/samfundet.png" style="width:35vw; height: 25vw">
+                        <img src="img/samfundet.png" alt="Samfundet" style="width:35vw; height: 25vw">
                     </div>
                     
                     <div class="mySlides fade">
-                        <img src="img/Nidarosdommen.png" style="width:35vw; height: 25vw">
+                        <img src="img/Nidarosdommen.png" alt="Nidarosdomen" style="width:35vw; height: 25vw">
                     </div>
 
                     <!--Dots used to change which image is currently shown-->
@@ -53,7 +54,7 @@
                 
 
                 <!--Next button-->
-                <a class="next" onclick="plusSlides(1)">&#10095</a>    
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>    
 
             </div>
 
@@ -66,10 +67,9 @@
     
         </div>
     </div>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/translate.js"></script>
     <script src="javascript/dropdown.js"></script>
     <script src="javascript/homepage.js"></script>
 </body>
-<footer></footer>
 </html>
 <!--Help making the slideshow from: https://www.w3schools.com/howto/howto_js_slideshow.asp-->

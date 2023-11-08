@@ -35,6 +35,19 @@
     border: 2px solid #FFCE81;
 }
 
+#greenbox {
+  background-color: #BCD3BF;
+  width: auto;
+  height: 60px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  flex-direction: row;
+}
+
 .logo {
     display: inline-block;
     position: fixed;
