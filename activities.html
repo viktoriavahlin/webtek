@@ -1,8 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dropdown.css">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Translate API, google.com-->
+    <title>Activities</title>
+    <style>
+    .body {
+        width: 100%;
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px; 
+        margin-right: 10px;
+    }
+    .bilde{
+        max-width: 200px;
+    }
+    .gulboks {
+    flex: 1;
+    border: 2px solid #FFCE81;
+    padding: 30px;
+    max-width: 400px; 
+    background-color: #FFCE81;
+    color: black;
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        /*margin: 20px 0;*/
+        justify-content: center;
+    }
+    </style>
 </head>
 
 
@@ -10,81 +46,101 @@
     <header>
     </header>
 
-    <h3>Activities</h3>
+
+    <div id="google_translate">
+    <button id="translateButton">Oversett</button>  
+    </div>
+
+
+    <h3>Aktiviteter</h3>
 
     <div class="center-box">
+    <p>I Trondheim er det massevis av aktiviteter for studenter, både aktiviteter de kan gjøre selv eller organiserte
+        aktiviteter som sport. På denne siden kan du lese om noen av aktivitetstilbudene Trondheim har å by på. 
+    </p>
+    </div>
     
-    </div>
 
-
+  
+    
     <div class="omoss">
-        <div class="item left">    
-            <img src="img/Marit.PNG" alt="" class="bilde">
-            <div class ="gulboks">
-            <h5>Marit Svendby Otervik</h5>
-            <p>Kunnskapsansvarlig</p>
-            <p>Kunnskap.inkludering@gmail.com</p>
-            <p>+47 95112233</p>
+        <a id="NTNUI">
+            <h3>NTNUI</h3>
+            <div class="item right">    
+                <img src="img/NTNUI.jpg" alt="" class="bilde">
+                <div class ="gulboks">
+                    <p>NTNUI er Norges største idrettsforening, av og for studenter ved NTNU. 
+                NTNUI tilbyr aktiviteter innenfor mer enn 5 ulike idretter og aktiviteter,
+                alt fra tradisjonelle idretter som fotball, håndball og volleyball,
+                til nyere idretter som rumpeldunk og E-sport. <br>
+                For å melde seg på de ulike undergruppene er det lurt å se på gruppas nettside
+                eller sosiale medier for info om evt. åpne treninger eller laguttak. 
+                Det er også mulighet for å få info om alle idretter under Aktiv Campus, som er et årlig
+                arrangement av NTNUI hvor de ulike idrettenee arrangerer aktiviteter åpne for alle. 
+                Noen av idrettene forutsetter SIT trenings-medlemsskap, for tilgang til haller og liknende,
+                så dette er lurt å sette seg inn i før du evt. skaffer medlemskap på andre treningssentere.</p>
+                    <p>I NTNUI er det virkelig noe for alle!</p>
+                    <p>Sjekk ut NTNUI.no for mer informasjon!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="item right">
-            <img src="img/Viktoria.PNG" alt="" class="bilde">
-            <div class ="gulboks">
-            <h5>Viktoria Vahlin</h5>
-            <p>Sosiale medier-ansvarlig</p>
-            <p>Sosial.inkludering@gmail.com</p>
-            <p>+47 95223344</p>
-            </div>
-        </div>
-
+    </a>
+        <a id="Tur">
+        <h3>Turmuligheter</h3>
         <div class="item left">
-            <img src="img/Hallvard.PNG" alt="" class="bilde">
+            <div class="image-container">
+                <img src="img/Estenstadhytta.jpg" alt="Image 1" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
+                <img src="img/bymarka.jpg" alt="Image 2" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
+                <img src="img/Grønlia.jpg" alt="Image 3" class="bilde" style="float:right; margin: 0px 0px 0px 60px">
+            </div>
+
             <div class ="gulboks">
-            <h5>Hallvard Futterer-Wannebo</h5>
-            <p>Grafisk designer</p>
-            <p>Grafisk.inkludering@gmail.com</p>
-            <p>+47 95334455</p>
+            <p> I Trondheimsområdet er det mange områder med gode turmuligheter. Både om du vil gå turer til fots eller på ski på vinterhalvåret.</p>
+            <h5>Skiturer</h5>
+            <p>I Bymarka og Granåsen er det mange ulike løypemuligheter på vinterstid. Om du foretrekker å stå i alpinsenter går det jevnlige busser til Vassfjellet og Gråkallen.</p>
+            <h5>Gåturer</h5>
+            <p>I Bymarka og Estenstadmarka er det mange turmuligheter med gode muligheter for utsikt. Nettside med forslag til turruter i Trondheim:<br>
+                 https://www.tt.no/9-fotturer-i-trondheim/ </p>
+            <h5>Estenstadhytta </h5>
+            <p>I Estenstadmarka finner du Estenstadhytta, som har en flott utsikt over byen og serverer noe godt å spise og drikke når du ønsker. Du kan sitte både inne i hytta og på deres uteområder og nyte mat og drikke fra cafeen. Cafeen har en variert meny som spenner fra kaffe og bakverk til taco, norsk husmannskost og andre middagsretter. <br>
+                Åpningstider: <br>
+                Mandag: Stengt  <br>
+                Tirsdag: 11.00 til 15.00 <br>
+                Onsdag: 11.00 til 20.00 <br>
+                Torsdag: 11.00 til 20.00 <br>
+                Fredag: Stengt <br>
+                Lørdag: 10.00 til 16.00 <br>
+                Søndag: 09.00 til 16.00 </p>
+            <h5>Grønlia</h5>
+            <p>I hjertet av Bymarka finner du Grønlia. Grønlia serverer bakst og kaffe til turgåere og skiløpere i området, og er et perfekt sted for en pause i midt i turen da det ligger i et knutepunkt for mange av de ulike turløypene i Bymarka.<br>
+                Åpningstider: <br>
+                Mandag: 11-15<br>
+                Tirsdag: 10-15<br>
+                Onsdag: 10-15<br>
+                Torsdag: 10-15<br>
+                Fredag: 10:15<br>
+                Lørdag - Søndag: 10-16</p>
             </div>
         </div>
-
+        </a>
+        <a id="Sit">
+        <h3>Sit Trening</h3>
         <div class="item right">
-            <img src="img/Alexandra.PNG" alt="" class="bilde">
+            <img src="img/SIT.png" alt="" class="bilde">
             <div class ="gulboks">
-            <h5>Alexandra Tennebø</h5>
-            <p>HR</p>
-            <p>HR.inkludering@gmail.com</p>
-            <p>+47 95445566</p>
+            <p>Ønsker du heller å trene på egenhånd på treningssenter eller delta på gruppetimer? Da kan du sjekke ut Sit trening.
+                De har det beste treningstilbudet for studenter i Trondheim. Hos Sit får du tilgang til fem ulike treningssentre med moderne utstyr, lange åpningstider og varierte gruppetimer nær de største campusene, til en rimelig penge. <br>
+                For mer info, sjekk ut:<br>
+                https://www.sit.no/trening </p>
             </div>
         </div>
-
-        <div class="item left">
-            <img src="img/Tone.PNG" alt="" class="bilde">
-            <div class ="gulboks">
-            <h5>Tone Alsvik Finstad</h5>
-            <p>CEO</p>
-            <p>CEO.inkludering@gmail.com</p>
-            <p>+47 95556677</p>
-            </div>
-        </div>
-
-        <div class="item right">
-            <img src="img/Hanna.PNG" alt="" class="bilde">
-            <div class ="gulboks">
-            <h5>Hanna Falch Næstby</h5>
-            <p>Board</p>
-            <p>Board.inkludering@gmail.com</p>
-            <p>+47 95667788</p>
-            </div>
-        </div>
-
+        </a>
     </div>
 
 
-
-    <footer>
-
-    </footer>
+    <script src="javascript/translate.js"></script>
+    <script src="javascript/dropdown.js"></script>
+        
+    <footer></footer>
 </body>
 
 </html>

@@ -1,0 +1,137 @@
+ .main {
+    margin-top: 100px;
+ }
+
+ #google_translate {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+ }
+
+
+ #nav {
+    position: absolute;
+    text-align: center;
+ }
+ 
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin: 0px auto;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #BCD3BF;
+    
+}
+
+.header {
+    /*display: flex;*/
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin: 60px auto;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #FFCE81;
+    border: 2px solid #FFCE81;
+}
+
+#greenbox {
+  background-color: #BCD3BF;
+  width: auto;
+  height: 60px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  flex-direction: row;
+}
+
+.logo {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -15px;
+    z-index: 99999;
+    margin: auto;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {  
+    list-style-type: none;
+  }
+
+  #nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+  nav>ul {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  
+  
+  nav>ul>li {
+    display: inline-block;
+    position: relative;
+    background-color: #FFCE81;
+    border-radius: 5px;
+    padding: 0 20px;
+  }
+  
+  nav>ul>li:hover>ul {
+    display: block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  nav>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+  }
+  
+  nav>ul>li>ul>li {
+    position: relative;
+    background-color: #FFCE81;
+  }
+  
+  nav>ul>li>ul>li:hover>ul {
+    display: block;
+  }
+  
