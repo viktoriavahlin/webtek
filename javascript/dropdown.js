@@ -6,14 +6,14 @@ header.innerHTML = `
 <div class="header">
 <nav id=navbar>
     <ul>
-    <li><a href="#">Aktiviteter</a>
+    <li><a href="activities.html">Aktiviteter</a>
         <ul>
             <li><a href="activities.html#NTNUI">NTNUI</a></li>
             <li><a href="activities.html#Tur">Turmuligheter</a></li>
             <li><a href="activities.html#Sit">Sit Trening</a></li>
         </ul>
     </li>
-    <li><a href="#">Geografi</a>
+    <li><a href="transport.html">Geografi</a>
         <ul>
         <li><a href="transport.html#buss">Kart</a></li>  
         <li><a href="transport.html#KartTrondheim">Transport</a></li>
@@ -23,7 +23,7 @@ header.innerHTML = `
     <li>          </li>
     <li>          </li>
     <li>          </li>
-    <li><a href="#">Tradisjoner</a>
+    <li><a href="traditions.html">Tradisjoner</a>
         <ul>
             <li><a href="traditions.html#Studentviser">Studentviser</a></li>
             <li><a href="traditions.html#Hvaer">Hva er dette?</a></li>
@@ -32,7 +32,7 @@ header.innerHTML = `
             <li><a href="traditions.html#Utesteder">Utesteder</a></li>
         </ul>
         </li> 
-    <li><a href="#">Frivillige verv</a>
+    <li><a href="volunteerwork.html">Frivillige verv</a>
         <ul>
         <li><a href="volunteerwork.html#linje">Linjeforeninger</a></li>
         <li><a href="volunteerwork.html#uka">Uka</a></li>
@@ -43,9 +43,11 @@ header.innerHTML = `
     </ul>
 </nav>
 </div>
+<a href="homepage.html">
 <div class="logo">
     <img src="img/Logo.png" alt="Logo inkluderingsbanden" style="width: 250px">
 </div>
+</a>
 <div class="flexcontainer" id="greenbox">
 </div>
 
