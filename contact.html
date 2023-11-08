@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
-    <script src="javascript/script.js"></script>
 </head>
 
 
@@ -15,19 +14,20 @@
     <h3>Har du noen spørsmål?</h3>
 
     <div class="center-box">
-        <form>
+        <form id="contact-form" action="#" method="post">
 
         <h5>Fullt navn:</h5>
-        <input type="text" required>
+        <input type="text" name="name" id="name" required>
 
         <h5>Email:</h5>
-        <input type="text" required>
+        <input type="text" name="email" id="email" required>
 
         <h5>Melding:</h5>
-        <input type="text" style="height:200px;width:250px;">
+        <input type="text" name="message" id="message" style="height:200px;width:250px;">
 
         <p>
-        <button type="submit">Send inn</button>
+        <!-- <button type="submit">Send inn</button> -->
+        <input type="submit" value="Submit">
         </p>
         
         </form>
@@ -38,5 +38,5 @@
 
     </footer>
 </body>
-
+<script src="javascript/contact_form.js"></script>
 </html>
