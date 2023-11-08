@@ -59,12 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const footer = document.querySelector('footer');
 footer.innerHTML = `
   <div class="footer">
+    <div class="item-left">
+        <h3>Inkluderingsbanden<h3>
         <p>
-        Inkluderingsbanden <br><br>
-        En nettside for deg som skal begynne på NTNU
+        Tlf +47 047 05 704<br>
+        mail: inkluderingsbanden@gmail.com<br>
+        Høgskoleringen 58, 7034 Trondheim<br>
         </p>
-
-        <img src="img/Logo.png" alt="Logo inkluderingsbanden" style="width: 250px">
+        </div>
+    
         <p>
         <a href="contact.html">Kontakt oss</a> <br><br>
         <a href="aboutus.html">Om oss</a>
