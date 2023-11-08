@@ -9,7 +9,7 @@ header.innerHTML = `
     <a href="#html">Contact</a>
     <a href="#html">Activites</a>
 </div>
-
+    
 `;
 
 const footer = document.querySelector('footer');

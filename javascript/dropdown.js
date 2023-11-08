@@ -53,14 +53,32 @@ header.innerHTML = `
 `;
 
 
-
-
-
-const footer = document.querySelector('footer');
-footer.innerHTML = `
-<div class="footer">
-    <p>Inkluderingsbanden</p>
-</div>
-`;
 const headerOffset = header.offsetTop; 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+footer.innerHTML = `
+  <div class="footer">
+        <p>
+        Inkluderingsbanden <br><br>
+        En nettside for deg som skal begynne på NTNU
+        </p>
+
+        <img src="img/Logo.png" alt="Logo inkluderingsbanden" style="width: 250px">
+        <p>
+        <a href="contact.html">Kontakt oss</a> <br><br>
+        <a href="aboutus.html">Om oss</a>
+        </p>
+
+        
+  </div>
+  
+  
+`;
+
 const footerOffset = footer.offsetTop;
+  });
+
+
+
+
