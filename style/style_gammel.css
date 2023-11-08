@@ -1,22 +1,13 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    box-sizing: border-box;
+    box-sizing:border-box
 }
 
 body {
     background-color: #BCD3BF;
-    margin-top: 200px;
-    width: 100%;  
-}
-
-h3 {
-    font-size: xx-large;
-    text-align: center;
-}
-h4 {
-    font-size: x-large;
-    margin-bottom: 0px;
+    width: 100%; 
+    
 }
 
 .omoss {
@@ -29,9 +20,9 @@ h4 {
 .item{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 50%;
     margin: 20px 0;
-    justify-content:center;
+    justify-content: center;
 }
 
 .left {
@@ -43,38 +34,33 @@ h4 {
 }
 
 .bilde {
-    max-width: 400px;
-    border: 7px solid #FFCE81;
+    max-width: 100px;
+    border: solid #FFCE81;
     margin-right: 10px;
     margin-left: 10px;
-}
-
-.image-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-right: 10px;
 }
 
 .gulboks {
     flex: 1;
     border: 2px solid #FFCE81;
+    padding: 5px;
+    max-width: 300px; 
     background-color: #FFCE81;
     color: black;
-    padding: 40px 30px 40px 30px;
-    max-width: 70%; 
-    
-    
-} 
+  }
+
+h3 {
+    text-align: center;
+}
 
 .center-box {
     text-align: center; 
     background-color: #FFCE81; 
     padding: 10px;
     border: 2px solid #FFCE81;
-    max-width: 70%; 
+    max-width: 400px; 
     margin: 0 auto; 
+    
 }
 
 /*Container for the whole homepage*/
@@ -167,3 +153,7 @@ h4 {
     border: solid #FFCE81;
     border-width: thick;
 }
+
+
+
+
