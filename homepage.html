@@ -1,1 +1,75 @@
-<p>Test</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dropdown.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <div id="google_translate"></div>
+    <button id="translateButton">Oversett</button>
+    
+    <header>
+    </header>
+
+
+    <div class="homepage">
+        <div class="center-box-homepage" >
+            <p style="font-size: 30px;">Åja, du skal studere i Trondheim?</p>
+        </div>
+        <div class="homepage-innhold">
+            <!--Slideshow-->
+            <div class="slides-homepage">
+                <!--Previous button-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                
+                <div class="sl">
+                    <div class="mySlides fade">
+                        <img src="img/ntnu-hovedbygget.jpeg" style="width:35vw; height: 25vw">
+                        <!--<div class="text">NTNU hovedbygget</div>!-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/trondheim.png" style="width:35vw; height: 25vw">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/samfundet.png" style="width:35vw; height: 25vw">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="img/Nidarosdommen.png" style="width:35vw; height: 25vw">
+                    </div>
+
+                    <!--Dots used to change which image is currently shown-->
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                
+
+                <!--Next button-->
+                <a class="next" onclick="plusSlides(1)">&#10095</a>    
+
+            </div>
+
+            <!--Text next to slideshow-->
+            <div class="text-homepage">
+                <p>Velkommen til Trondheim! <br> <br> 
+                Her kan du finne informasjonom studentlivet i Trondheim! Dette er en by med mange gamle tradisjoner og gøye aktiviteter man kan bli med på. <br>
+                Klikk deg inn på de forskjellige sidene for å lese mer om denne fine byen!</p>
+            </div>
+    
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/dropdown.js"></script>
+    <script src="javascript/homepage.js"></script>
+</body>
+<footer></footer>
+</html>
+<!--Help making the slideshow from: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
