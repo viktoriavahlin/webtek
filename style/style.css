@@ -1,11 +1,23 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 body {
-    margin-top: 200px; /*La til for at alt skal komme under headeren*/
-    background-color: #BCD3BF 
+    background-color: #BCD3BF;
+    margin-top: 200px;
+    width: 100%;  
+}
+
+h3 {
+    font-size: xx-large;
+    text-align: center;
+}
+h4 {
+    font-size: x-large;
+    margin-bottom: 0px;
+
 }
 
 .omoss {
@@ -18,9 +30,9 @@ body {
 .item{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 80%;
     margin: 20px 0;
-    justify-content: center;
+    justify-content:center;
 }
 
 .left {
@@ -32,31 +44,127 @@ body {
 }
 
 .bilde {
-    max-width: 100px;
-    border: solid #FFCE81;
+    max-width: 400px;
+    border: 7px solid #FFCE81;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px;
 }
 
 .gulboks {
     flex: 1;
     border: 2px solid #FFCE81;
-    padding: 5px;
-    max-width: 300px; 
     background-color: #FFCE81;
     color: black;
-  }
-
-h3 {
-    text-align: center;
-}
+    padding: 40px 30px 40px 30px;
+    max-width: 70%; 
+    
+    
+} 
 
 .center-box {
     text-align: center; 
     background-color: #FFCE81; 
     padding: 10px;
     border: 2px solid #FFCE81;
-    max-width: 400px; 
+    max-width: 70%; 
     margin: 0 auto; 
 }
 
+/*Container for the whole homepage*/
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+/*Container for main text/heading of the page*/
+.center-box-homepage {
+    text-align: center; 
+    background-color: #FFCE81; 
+    padding: 10px;
+    border: 2px solid #FFCE81;
+    margin: 0 auto; 
+    width: 80%;
+}
+/*Container for all the rest of the content on the page*/
+.homepage-innhold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 80%;
+    
+}
+/*Container for the slideshow as a whole*/
+.slides-homepage{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
+    border: solid #FFCE81;
+    border-width: thick;
+    background-color: #FFCE81;
+    padding-top: 1.5%;
+}
+/*Container for the slides*/
+.mySlides {
+    display: none;
+}
+/*container for the next and previous arrows*/
+.prev, .next {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*backroundcolor changes when you hover over the arrow*/
+.prev:hover, .next:hover {
+    background-color: #BCD3BF;
+}
+
+/*Container for the dots at the bottom of the image one can shift images with*/
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #BCD3BF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #FFF6E9;
+}
+
+/*Container to ensure dots is under picture*/
+.sl{
+    display:flex;
+    flex-direction: column;
+}
+
+/*Container for the text next to the slideshow*/
+.text-homepage {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: #FFCE81;
+    text-align: center;
+    align-self: stretch; 
+    border: solid #FFCE81;
+    border-width: thick;
+}
