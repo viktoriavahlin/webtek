@@ -181,25 +181,6 @@ h4 {
     margin-bottom: 0px;
 }
 
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #FFCE81;
-    border: 2px solid #FFCE81;
-}
-
 /*Container for the dots at the bottom of the image one can shift images with*/
 .dot{
     cursor: pointer;
@@ -240,5 +221,12 @@ h4 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+#kart2 {
+    position: relative;
+    top: 1cm;
+    left: calc(50vw - 195px);
     text-align: center;
 }
