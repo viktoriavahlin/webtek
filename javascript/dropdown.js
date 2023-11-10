@@ -54,14 +54,14 @@ header.innerHTML = `
 `;
 
 
-const headerOffset = header.offsetTop; 
+const headerOffset = header.offsetTop;
 
-document.addEventListener('DOMContentLoaded', function() {
-const footer = document.querySelector('footer');
+document.addEventListener('DOMContentLoaded', function () {
+    const footer = document.querySelector('footer');
 
 
 
-footer.innerHTML = `
+    footer.innerHTML = `
 
 <div class="footer">
   
@@ -89,7 +89,7 @@ footer.innerHTML = `
 `;
 
 
-const footerOffset = footer.offsetTop;
- });
+    const footerOffset = footer.offsetTop;
+});
 
 
