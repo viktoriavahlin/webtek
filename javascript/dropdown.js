@@ -53,6 +53,7 @@ header.innerHTML = `
 
 `;
 
+/*Struktur i listesystemet inspirert av https://codepen.io/tamas100/pen/QWVmpJp?fbclid=IwAR1rIOt3r0iPJsrOMvHFcqec03uLvYsglL8I7Fkb0BaEqQDno-16vMtN9CQ*/
 
 const headerOffset = header.offsetTop;
 
